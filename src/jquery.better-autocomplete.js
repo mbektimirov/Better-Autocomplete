@@ -226,7 +226,7 @@ var BetterAutocomplete = function($input, resource, options, callbacks) {
              !event.shiftKey && !event.ctrlKey && !event.altKey &&
              !event.metaKey) {
       select();
-      return event.keyCode == 9; // Never cancel tab
+      return event.keyCode == 9 || event.keyCode == 13; // Never cancel tab or enter
     }
   };
 
